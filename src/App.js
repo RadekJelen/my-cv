@@ -1,6 +1,7 @@
 import { PersonInfo } from "./features/PersonInfo";
 import { Skills } from "./features/Skills";
-import {ToLearn} from "./features/ToLearn";
+import { ToLearn } from "./features/ToLearn";
+import { Portfolio } from "./features/Portfolio";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <PersonInfo />
       <Skills />
       <ToLearn />
+      <Portfolio />
     </>
   );
 }
