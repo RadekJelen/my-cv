@@ -1,22 +1,39 @@
-import { Wrapper, Container, Title, Description, LinkLine, Link } from "./styled";
+import { useSelector } from "react-redux";
+import { selectRepositories } from "../../Homepage/homepageSlice";
+import { TilesWrapper, Tile, Title, Description, LinkLine, Link } from "./styled";
 
-export const Tiles = () => (
-  <Wrapper>
-    <Container>
-      <Title>Movies Browser</Title>
-      <Description>
-        Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.
-      </Description>
-      <div>
-        <LinkLine>Demo: <Link href="https://link.demo.com" target="_blank" rel="noreferrer noopener">
-          https://link.demo.com
-        </Link>
-        </LinkLine>
-        <LinkLine>Code: <Link href="https://link.demo.com" target="_blank" rel="noreferrer noopener">
-          https://link.demo.com
-        </Link>
-        </LinkLine>
-      </div>
-    </Container>
-  </Wrapper>
-)
+export const Tiles = () => {
+  const repositories = useSelector(selectRepositories);
+
+  return (
+    <TilesWrapper>
+      {repositories.map(repo => (
+        <Tile key={repo.id}>
+          <Title>{repo.name}</Title>
+          <Description>{repo.description}</Description>
+          <LinkLine>
+            Link to:{" "}
+            <Link
+              href={`https://${repo.owner.login}.github.io/${repo.name}`}
+              title={`https://${repo.owner.login}.github.io/${repo.name}`}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              demo
+            </Link>
+          </LinkLine>
+          <LinkLine>
+            Link to:{" "}
+            <Link
+              href={repo.html_url}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              code
+            </Link>
+          </LinkLine>
+        </Tile>
+      ))}
+    </TilesWrapper>
+  )
+}

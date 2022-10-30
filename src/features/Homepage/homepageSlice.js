@@ -16,16 +16,21 @@ const homepageSlice = createSlice({
     fetchRepositoriesError: state => {
       state.status = "error"
     },
+    setRepositories: (state, { payload }) => {
+      state.repositories = payload.sort((a, b) => b.created_at.localeCompare(a.created_at));
+    }
   }
 });
 
 export const {
   fetchRepositories,
   fetchRepositoriesSuccess,
-  fetchRepositoriesError
+  fetchRepositoriesError,
+  setRepositories
 } = homepageSlice.actions;
 
 const selectHomepageSlice = state => state.homepage;
+export const selectRepositories = state => selectHomepageSlice(state).repositories;
 export const selectStatus = state => selectHomepageSlice(state).status;
 
 
