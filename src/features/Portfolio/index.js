@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { fetchRepositories, selectStatus } from "../Homepage/homepageSlice";
 import { Tiles } from "./Tiles";
 import { Error } from "./Error";
+import { Loader } from "./Loader";
 
 
 
@@ -23,7 +24,7 @@ export const Portfolio = () => {
       <Paragraph>My recent projects</Paragraph>
       {
         status === "loading"
-          ? (<p>loading</p>)
+          ? (<Loader />)
           : (status === "error"
             ? (<Error />)
             : (<Tiles />)
