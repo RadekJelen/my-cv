@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonLink = styled.button`
+export const ButtonLink = styled.a`
   background: ${({ theme }) => theme.colors.scienceBlue};
   color: ${({ theme }) => theme.colors.white};
   padding: 12px 16px;

@@ -1,9 +1,11 @@
 import { Paragraph, Title, Wrapper } from "./styled";
 import { ReactComponent as Logo } from "./githubLogo.svg";
 import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 import { fetchRepositories, selectStatus } from "../Homepage/homepageSlice";
 import { Tiles } from "./Tiles";
-import { useEffect } from "react";
+import { Error } from "./Error";
+
 
 
 export const Portfolio = () => {
@@ -23,7 +25,7 @@ export const Portfolio = () => {
         status === "loading"
           ? (<p>loading</p>)
           : (status === "error"
-            ? (<p>error</p>)
+            ? (<Error />)
             : (<Tiles />)
           )
       }
