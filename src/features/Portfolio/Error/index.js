@@ -1,4 +1,4 @@
-import { ButtonLink } from "../../ButtonLink/styled";
+import { ButtonLink } from "../../../common/ButtonLink/styled";
 import { ReactComponent as DangerIcon } from "./danger.svg";
 import { Text, Title, Wrapper } from "./styled";
 
