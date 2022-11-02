@@ -10,8 +10,8 @@ export const PersonInfo = () => (
       <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dolor nibh. Nullam finibus enim dui, sit amet sollicitudin ex faucibus quis.
       </Paragraph>
-      <Button>
-        {<Icon />}
+      <Button href="#hire-me">
+        <Icon />
         Hire me
       </Button>
     </div>
