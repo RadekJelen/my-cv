@@ -9,11 +9,21 @@ export const Wrapper = styled.header`
   grid-template-columns: auto 1fr;
   grid-gap: 66px;
   align-items: center;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+  }
 `;
 
 export const Image = styled.img`
   max-width: 398px;
+  width: 50vw;
   border-radius: 100%;
+
+  @media (max-width: 481px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ThisIs = styled.p`
@@ -22,6 +32,11 @@ export const ThisIs = styled.p`
   font-size: 12px;
   text-transform: uppercase;
   line-height: 130%;
+
+  @media (max-width: 481px) {
+    font-size: 22px;
+    margin-top: 8px;
+  }
 `;
 
 export const Name = styled.h1`
@@ -30,6 +45,11 @@ export const Name = styled.h1`
   font-size: 38px;
   color: ${({ theme }) => theme.colors.mineShaft};
   letter-spacing: 0.05em;
+
+  @media (max-width: 481px) {
+    font-size: 22px;
+    margin-top: 8px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -37,6 +57,11 @@ export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
+
+  @media (max-width: 481px) {
+    font-size: 17px;
+    margin: 16px 0 24px;
+  }
 `;
 
 export const Button = styled(ButtonLink)`
@@ -48,4 +73,8 @@ export const Button = styled(ButtonLink)`
 
 export const Icon = styled(message)`
   margin-right: 16px;
+
+  @media (max-width: 481px) {
+    margin-right: 12px;
+  }
 `;

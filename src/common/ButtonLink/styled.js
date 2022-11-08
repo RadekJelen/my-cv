@@ -16,4 +16,8 @@ export const ButtonLink = styled.a`
   &:active {
     box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
   }
+
+  @media (max-width: 481px) {
+    font-size: 18px;
+  }
 `;
