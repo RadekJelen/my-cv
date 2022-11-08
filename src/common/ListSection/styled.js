@@ -19,7 +19,6 @@ export const Title = styled.h2`
   font-size: 30px;
   font-weight: 900;
   color: ${({ theme }) => theme.colors.mineShaft};
-  letter-spacing: 0.05em;
   line-height: 36px;
 
   @media (max-width: 481px) {
@@ -53,7 +52,6 @@ export const List = styled.ul`
   list-style: none;
   grid-gap: 0 20px;
   line-height: 140%;
-  letter-spacing: 0.05em;
   font-size: 18px;
 
   @media (max-width: 769px) {

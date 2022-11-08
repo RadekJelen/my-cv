@@ -17,7 +17,6 @@ export const Title = styled.h2`
   font-size: 30px;
   font-weight: 900;
   line-height: 36px;
-  letter-spacing: 0.05em;
 
   @media (max-width: 481px) {
     margin: 0;
@@ -30,7 +29,6 @@ export const Paragraph = styled.p`
   color: ${({ theme }) => theme.colors.mineShaft};
   font-size: 20px;
   line-height: 140%;
-  letter-spacing: 0.05em;
 
   @media (max-width: 481px) {
     font-size: 17px;

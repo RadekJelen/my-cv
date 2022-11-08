@@ -44,7 +44,6 @@ export const Name = styled.h1`
   font-weight: 900;
   font-size: 38px;
   color: ${({ theme }) => theme.colors.mineShaft};
-  letter-spacing: 0.05em;
 
   @media (max-width: 481px) {
     font-size: 22px;
@@ -56,7 +55,6 @@ export const Paragraph = styled.p`
   margin: 32px 0;
   font-size: 20px;
   line-height: 140%;
-  letter-spacing: 0.05em;
 
   @media (max-width: 481px) {
     font-size: 17px;

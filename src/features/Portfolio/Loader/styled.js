@@ -4,7 +4,6 @@ export const Text = styled.p`
   margin: 88px 0 48px;
   font-size: 20px;
   line-height: 140%;
-  letter-spacing: 0.05em;
   color: ${({ theme }) => theme.colors.mineShaft};
 `;
 

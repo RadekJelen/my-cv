@@ -33,7 +33,6 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.colors.scienceBlue};
   font-size: 24px;
   line-height: 29px;
-  letter-spacing: 0.05em;
 
   @media (max-width: 481px) {
     font-size: 16px;
@@ -43,7 +42,6 @@ export const Title = styled.h3`
 export const Description = styled.p`
   margin: 24px 0;
   line-height: 140%;
-  letter-spacing: 0.05em;
   font-size: 18px;
   @media (max-width: 481px) {
     margin-top: 16px;
@@ -54,7 +52,7 @@ export const Description = styled.p`
 export const LinkLine = styled.p`
   margin: 10px 0 0;
   line-height: 140%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.;
 `;
 
 export const Link = styled.a`
