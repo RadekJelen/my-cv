@@ -10,7 +10,7 @@ export const Wrapper = styled.header`
   grid-gap: 66px;
   align-items: center;
 
-  @media (max-width: 769px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     grid-template-columns: 1fr;
     grid-gap: 12px;
   }
@@ -21,7 +21,7 @@ export const Image = styled.img`
   width: 50vw;
   border-radius: 100%;
 
-  @media (max-width: 481px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     grid-template-columns: 1fr;
   }
 `;
@@ -33,7 +33,7 @@ export const ThisIs = styled.p`
   text-transform: uppercase;
   line-height: 130%;
 
-  @media (max-width: 481px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 22px;
     margin-top: 8px;
   }
@@ -45,7 +45,7 @@ export const Name = styled.h1`
   font-size: 38px;
   color: ${({ theme }) => theme.colors.mineShaft};
 
-  @media (max-width: 481px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 22px;
     margin-top: 8px;
   }
@@ -56,7 +56,7 @@ export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 140%;
 
-  @media (max-width: 481px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 17px;
     margin: 16px 0 24px;
   }
@@ -72,7 +72,7 @@ export const Button = styled(ButtonLink)`
 export const Icon = styled(message)`
   margin-right: 16px;
 
-  @media (max-width: 481px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     margin-right: 12px;
   }
 `;
