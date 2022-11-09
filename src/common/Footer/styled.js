@@ -11,7 +11,6 @@ export const LetsTalk = styled.p`
   font-weight: 700;
   font-size: 12px;
   line-height: 130%;
-  color: ${({ theme }) => theme.colors.slateGray};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     margin-bottom: 12px;
