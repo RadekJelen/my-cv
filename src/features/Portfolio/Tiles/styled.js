@@ -15,12 +15,13 @@ export const Tile = styled.div`
   max-width: 592px;
   padding: 56px;
   text-align: left;
-  background-color: ${({ theme }) => theme.colors.white};
-  border: 6px solid rgba(209, 213, 218, 0.3);
+  background-color: ${({ theme }) => theme.colors.sectionsBackground};
+  border: 6px solid ${({ theme }) => theme.colors.tilesBorder};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
+
   &:hover {
-    border: 6px solid rgba(3, 102, 214, 0.2);
+    border: 6px solid ${({ theme }) => theme.colors.tilesBorderHover};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
@@ -30,7 +31,7 @@ export const Tile = styled.div`
 
 export const Title = styled.h3`
   margin: 0;
-  color: ${({ theme }) => theme.colors.scienceBlue};
+  color: ${({ theme }) => theme.colors.blue};
   font-size: 24px;
   line-height: 29px;
 
@@ -57,8 +58,9 @@ export const LinkLine = styled.p`
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.scienceBlue};
+  color: ${({ theme }) => theme.colors.blue};
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
+  
   &:hover {
     border-bottom: 1px solid rgb(3, 102, 214, 0.8);
   }

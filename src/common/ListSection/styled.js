@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
 max-width: 1216px;
 margin: 72px auto;
 padding: 32px;
-background: ${({ theme }) => theme.colors.white};
+background: ${({ theme }) => theme.colors.sectionsBackground};
 box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
 border-radius: 4px;
 
@@ -18,7 +18,7 @@ export const Title = styled.h2`
   margin: 0;
   font-size: 30px;
   font-weight: 900;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
   line-height: 36px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
@@ -69,7 +69,7 @@ export const Item = styled.li`
     content: "•";
     font-size: 24px;
     padding-right: 16px;
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.blue};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
       font-size: 20px;

@@ -1,8 +1,9 @@
-import { Paragraph, Title, Wrapper } from "./styled";
-import { ReactComponent as Logo } from "./githubLogo.svg";
 import { useDispatch, useSelector } from "react-redux";
+import { selectDarkMode } from "../../features/ThemeSwitcher/themeSwitcherSlice";
 import { useEffect } from "react";
 import { fetchRepositories, selectStatus } from "../Homepage/homepageSlice";
+import { Paragraph, Title, Wrapper } from "./styled";
+import { ReactComponent as GithubLogo } from "./github_blue.svg";
 import { Tiles } from "./Tiles";
 import { Error } from "./Error";
 import { Loader } from "./Loader";
@@ -12,6 +13,7 @@ import { Loader } from "./Loader";
 export const Portfolio = () => {
   const status = useSelector(selectStatus);
   const dispatch = useDispatch();
+  const darkMode = useSelector(selectDarkMode);
 
   useEffect(() => {
     dispatch(fetchRepositories());
@@ -19,7 +21,9 @@ export const Portfolio = () => {
 
   return (
     <Wrapper>
-      <Logo />
+      <GithubLogo
+        fill={darkMode ? "#2188FF" : "#0366D6"}
+      />
       <Title>Portfolio</Title>
       <Paragraph>My recent projects</Paragraph>
       {

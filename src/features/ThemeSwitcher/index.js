@@ -1,18 +1,18 @@
-import { ReactComponent as LightSun } from "./sun_light_theme.svg";
+import { ReactComponent as Sun } from "./sun.svg";
 import { Icon, Switcher, SwitcherArea, SwitcherText } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
-import { selectDarkTheme, toggleTheme } from "./themeSwitcherSlice";
+import { selectDarkMode, toggleTheme } from "./themeSwitcherSlice";
 
 export const ThemeSwitcher = () => {
   const dispatch = useDispatch();
-  const darkTheme = useSelector(selectDarkTheme);
+  const darkMode = useSelector(selectDarkMode);
 
   return (
     <SwitcherArea onClick={() => dispatch(toggleTheme())}>
-      <SwitcherText>Dark mode {darkTheme ? "on" : "off"}</SwitcherText>
-      <Switcher darkTheme={darkTheme}>
-        <Icon>
-          <LightSun />
+      <SwitcherText>Dark mode {darkMode ? "on" : "off"}</SwitcherText>
+      <Switcher>
+        <Icon darkMode={darkMode}>
+          <Sun fill={darkMode ? "#252525" : "#FFFFFF"} />
         </Icon>
       </Switcher>
     </SwitcherArea>

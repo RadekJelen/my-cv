@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h3`
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
   font-size: 24px;
   line-height: 29px;
 `;
@@ -15,5 +15,5 @@ export const Text = styled.p`
   margin: 32px 0;
   font-size: 20px;
   line-height: 140%;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
 `;

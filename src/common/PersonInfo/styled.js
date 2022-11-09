@@ -43,7 +43,7 @@ export const Name = styled.h1`
   margin: 12px 0;
   font-weight: 900;
   font-size: 38px;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 22px;

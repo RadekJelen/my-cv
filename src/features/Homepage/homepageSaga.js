@@ -4,7 +4,7 @@ import { getRepositories } from "../Portfolio/getRepositories"
 
 function* fetchRepositoriesHandler() {
   try {
-    yield delay(2000);
+    yield delay(3000);
     const repositories = yield call(getRepositories);
     yield put(fetchRepositoriesSuccess(repositories));
     yield put(setRepositories(repositories));

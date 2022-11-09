@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const themeSwitcherSlice = createSlice({
   name: "themeSwitcher",
   initialState: {
-    darkTheme: false,
+    darkMode: false,
   },
   reducers: {
     toggleTheme: state => {
-      state.darkTheme = !state.darkTheme;
+      state.darkMode = !state.darkMode;
     }
   }
 });
@@ -15,6 +15,6 @@ const themeSwitcherSlice = createSlice({
 export const { toggleTheme } = themeSwitcherSlice.actions;
 
 const selectThemeSwitcherSlice = state => state.themeSwitcher;
-export const selectDarkTheme = state => selectThemeSwitcherSlice(state).darkTheme;
+export const selectDarkMode = state => selectThemeSwitcherSlice(state).darkMode;
 
 export default themeSwitcherSlice.reducer;

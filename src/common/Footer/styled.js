@@ -20,17 +20,18 @@ export const LetsTalk = styled.p`
 
 export const Link = styled.a`
   margin-right: 24px;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
   transition: color 0.2s linear;
   cursor: pointer;
+  
   &:hover {
-    color: ${({ theme }) => theme.colors.lightModeBlue};
+    color: ${({ theme }) => theme.colors.blue};
   }
 `;
 
 export const Email = styled.p`
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
   font-weight: 900;
   font-size: 32px;
   line-height: 39px;
@@ -43,7 +44,7 @@ export const Email = styled.p`
 export const Paragraph = styled.p`
   max-width: 600px;
   margin: 24px 0 48px;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
   font-size: 18px;
   line-height: 140%;
 

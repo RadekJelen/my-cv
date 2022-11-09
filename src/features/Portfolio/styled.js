@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   margin: 0 auto 140px;
   text-align: center;
 
-  
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     margin-bottom: 48px;
   }
@@ -13,7 +12,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h2`
   margin: 12px 0 8px;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
   font-size: 30px;
   font-weight: 900;
   line-height: 36px;
@@ -26,7 +25,7 @@ export const Title = styled.h2`
 
 export const Paragraph = styled.p`
   margin: 0;
-  color: ${({ theme }) => theme.colors.mineShaft};
+  color: ${({ theme }) => theme.colors.secondFont};
   font-size: 20px;
   line-height: 140%;
 
