@@ -1,8 +1,15 @@
 export const skillset = [
-  { id: 1, content: "Test" },
-  { id: 2, content: "Test" },
-  { id: 3, content: "Test" },
-  { id: 4, content: "Test" },
-  { id: 5, content: "Test" },
-
-]
+  { id: 1, content: "Semantic & accessible HTML, Markdown" },
+  { id: 2, content: "Responsive Web Design" },
+  { id: 3, content: "CSS (BEM convention, Flexbox, Grid)" },
+  { id: 4, content: "JavaScript (ES6+ features, Immutability)" },
+  { id: 5, content: "Git" },
+  { id: 6, content: "React (Hooks, Router)" },
+  { id: 7, content: "Styled Components" },
+  { id: 8, content: "Redux (Toolkit), Redux-Saga" },
+  { id: 9, content: "Error handling" },
+  { id: 10, content: "Promises, Async/Await" },
+  { id: 11, content: "Working with API (fetch, axios)" },
+  { id: 12, content: "Scrum" },
+  { id: 13, content: "Figma, Trello" },
+];
