@@ -8,7 +8,7 @@ export const PersonInfo = () => (
       <ThisIs>This is</ThisIs>
       <Name>Radosław Jeleń</Name>
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dolor nibh. Nullam finibus enim dui, sit amet sollicitudin ex faucibus quis.
+      Hi, I am a beginner Frontend Developer using React. I am currently looking for new job opportunities, so if you like my projects, contact me 😉
       </Paragraph>
       <Button href="#hire-me">
         <Icon />
