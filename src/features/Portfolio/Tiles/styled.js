@@ -5,6 +5,7 @@ export const TilesWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
+  justify-items: center;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     grid-template-columns: 1fr;
@@ -13,6 +14,7 @@ export const TilesWrapper = styled.div`
 
 export const Tile = styled.div`
   max-width: 592px;
+  width: 100%;
   padding: 56px;
   text-align: left;
   background-color: ${({ theme }) => theme.colors.sectionsBackground};
@@ -24,8 +26,13 @@ export const Tile = styled.div`
     border: 6px solid ${({ theme }) => theme.colors.tilesBorderHover};
   }
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 80%;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     padding: 24px;
+    width: 100%;
   }
 `;
 
@@ -59,9 +66,10 @@ export const LinkLine = styled.p`
 export const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.blue};
-  border-bottom: 1px solid rgb(3, 102, 214, 0.2);
+  border-bottom: 1px solid ${({ theme }) => theme.colors.blue};
   
   &:hover {
-    border-bottom: 1px solid rgb(3, 102, 214, 0.8);
+    color: ${({ theme }) => theme.colors.hoverBlue};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.hoverBlue};
   }
 `;

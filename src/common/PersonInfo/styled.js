@@ -34,7 +34,6 @@ export const ThisIs = styled.p`
   line-height: 130%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-    font-size: 22px;
     margin-top: 8px;
   }
 `;

@@ -1,7 +1,14 @@
+export const breakpoints = {
+  small: "481px",
+  medium: "769px",
+  large: "870px"
+};
+
 export const lightTheme = {
   colors: {
     background: "#FBFBFE",
     blue: "#0366D6",
+    hoverBlue: "hsl(212 100% 50%)",
     mainFont: "#6E7E91",
     secondFont: "#252525",
     sectionsBackground: "#FFFFFF",
@@ -11,17 +18,14 @@ export const lightTheme = {
     tilesBorderHover: "rgba(3, 102, 214, 0.2)",
     buttonBorderHover: "#8CC2FF",
   },
-  breakpoints: {
-    small: "481px",
-    medium: "769px",
-    large: "870px"
-  }
+  breakpoints: breakpoints
 };
 
 export const darkTheme = {
   colors: {
     background: "#252525",
     blue: "#2188FF",
+    hoverBlue: "hsl(212 100% 62%)",
     mainFont: "#FFFFFF",
     secondFont: "#FFFFFF",
     sectionsBackground: "#313131",
@@ -31,9 +35,5 @@ export const darkTheme = {
     tilesBorderHover: "rgba(3, 102, 214, 0.5)",
     buttonBorderHover: "#6D93BE",
   },
-  breakpoints: {
-    small: "481px",
-    medium: "769px",
-    large: "870px"
-  }
+  breakpoints: breakpoints
 };
