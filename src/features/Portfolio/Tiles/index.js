@@ -3,16 +3,18 @@ import { selectRepositories } from "../../Homepage/homepageSlice";
 import { TilesWrapper, Tile, Title, Description, LinkLine, Link } from "./styled";
 
 export const Tiles = () => {
-  const repositories = useSelector(selectRepositories);
+  const unwantedReposNames = ["my-cv"];
+  const allRepos = useSelector(selectRepositories);
+  const filteredRepos = allRepos.filter(({ name }) => !(unwantedReposNames.includes(name)));
 
   return (
     <TilesWrapper>
-      {repositories.map(repo => (
+      {filteredRepos.map(repo => (
         <Tile key={repo.id}>
           <Title>{repo.name}</Title>
           <Description>{repo.description}</Description>
           <LinkLine>
-            Link to:{" "}
+            Link to{" "}
             <Link
               href={`https://${repo.owner.login}.github.io/${repo.name}`}
               title={`https://${repo.owner.login}.github.io/${repo.name}`}
@@ -23,7 +25,7 @@ export const Tiles = () => {
             </Link>
           </LinkLine>
           <LinkLine>
-            Link to:{" "}
+            Link to{" "}
             <Link
               href={repo.html_url}
               target="_blank"
