@@ -28,10 +28,10 @@ export const Portfolio = () => {
       <Paragraph>My recent projects</Paragraph>
       {
         status === "loading"
-          ? (<Loader />)
+          ? <Loader />
           : (status === "error"
-            ? (<Error />)
-            : (<Tiles />)
+            ? <Error />
+            : <Tiles />
           )
       }
     </Wrapper>
