@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getThemeFromStorage, setThemeInStorage } from "./themeLocalStorage";
 
 const themeSwitcherSlice = createSlice({
   name: "themeSwitcher",
   initialState: {
-    darkMode: false,
+    darkMode: getThemeFromStorage(),
   },
   reducers: {
     toggleTheme: state => {
       state.darkMode = !state.darkMode;
+      setThemeInStorage(state.darkMode);
     }
   }
 });
