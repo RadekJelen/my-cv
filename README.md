@@ -1,5 +1,5 @@
 # 👨‍💻 My-CV
-This is my portfolio website 
+This is my portfolio website.
 
 <p>
 Hi, I am a beginner Frontend Developer using React. I am currently looking for new job opportunities, so if you like my projects, contact me 😉
@@ -11,13 +11,13 @@ Hi, I am a beginner Frontend Developer using React. I am currently looking for n
 
 The site was created as a virtual business card project. It presents my abilities and goals. Also it contains all the projects created by me. 
 
-<p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a></p>
+<p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a>.</p>
 
 <br>
 
 ## 🕹️  Demo
 
-You can find the demo [here](https://radekjelen.github.io/my-cv/)
+You can find the demo [here](https://radekjelen.github.io/my-cv/).
 
 <br>
 
@@ -26,7 +26,7 @@ You can find the demo [here](https://radekjelen.github.io/my-cv/)
 
 <br>
 
-## 💻 Tech Stack:
+## 💻 Tech Stack
 - HTML
 - CSS (Grid, Flex, media queries)
 - JavaScript (ES6+)
