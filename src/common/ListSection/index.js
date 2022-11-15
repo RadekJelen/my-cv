@@ -6,4 +6,4 @@ export const ListSection = ({ title, items }) => (
     <Line />
     <List longList={items.length > 12}>{items}</List>
   </Wrapper>
-)
+);

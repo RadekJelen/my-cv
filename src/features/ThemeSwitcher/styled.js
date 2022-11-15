@@ -38,7 +38,8 @@ export const Icon = styled.div`
   background-color: ${({ theme }) => theme.colors.mainFont};
   border-radius: 50%;
   text-align: center;
-    transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  
   ${({ darkMode }) => darkMode && css`
     transform: translate(20px);
   `}

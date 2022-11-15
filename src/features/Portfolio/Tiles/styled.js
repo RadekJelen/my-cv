@@ -51,6 +51,7 @@ export const Description = styled.p`
   margin: 24px 0;
   line-height: 140%;
   font-size: 18px;
+  
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     margin-top: 16px;
     font-size: 14px;

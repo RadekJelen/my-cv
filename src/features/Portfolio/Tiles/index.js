@@ -37,5 +37,5 @@ export const Tiles = () => {
         </Tile>
       ))}
     </TilesWrapper>
-  )
-}
+  );
+};

@@ -16,5 +16,5 @@ export const ThemeSwitcher = () => {
         </Icon>
       </Switcher>
     </SwitcherArea>
-  )
-}
+  );
+};

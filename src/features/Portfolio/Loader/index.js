@@ -5,4 +5,4 @@ export const Loader = () => (
     <Text>Please wait, projects are being loaded...</Text>
     <Spinner />
   </>
-)
+);

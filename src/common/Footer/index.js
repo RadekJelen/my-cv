@@ -8,7 +8,7 @@ export const Footer = () => (
     <LetsTalk>Let's talk!</LetsTalk>
     <Email>radek.jelen19@gmail.com</Email>
     <Paragraph>
-    I'm always open to new challenges. If you have a website in mind and need some help to make your ideas come to life, feel free to contact me 😁
+      I'm always open to new challenges. If you have a website in mind and need some help to make your ideas come to life, feel free to contact me 😁
     </Paragraph>
     <Icons>
       <Link href="https://github.com/RadekJelen" target="_blank" rel="noreferrer noopener">
@@ -22,4 +22,4 @@ export const Footer = () => (
       </Link>
     </Icons>
   </Wrapper>
-)
+);

@@ -8,13 +8,13 @@ const homepageSlice = createSlice({
   },
   reducers: {
     fetchRepositories: state => {
-      state.status = "loading"
+      state.status = "loading";
     },
     fetchRepositoriesSuccess: state => {
-      state.status = "success"
+      state.status = "success";
     },
     fetchRepositoriesError: state => {
-      state.status = "error"
+      state.status = "error";
     },
     setRepositories: (state, { payload }) => {
       state.repositories = payload.sort((a, b) => b.created_at.localeCompare(a.created_at));

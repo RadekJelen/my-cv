@@ -8,12 +8,10 @@ import { Tiles } from "./Tiles";
 import { Error } from "./Error";
 import { Loader } from "./Loader";
 
-
-
 export const Portfolio = () => {
   const status = useSelector(selectStatus);
-  const dispatch = useDispatch();
   const darkMode = useSelector(selectDarkMode);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchRepositories());
@@ -21,9 +19,7 @@ export const Portfolio = () => {
 
   return (
     <Wrapper>
-      <GithubLogo
-        fill={darkMode ? "#2188FF" : "#0366D6"}
-      />
+      <GithubLogo fill={darkMode ? "#2188FF" : "#0366D6"} />
       <Title>Portfolio</Title>
       <Paragraph>My recent projects</Paragraph>
       {
@@ -35,5 +31,5 @@ export const Portfolio = () => {
           )
       }
     </Wrapper>
-  )
-}
+  );
+};

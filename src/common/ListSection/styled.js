@@ -28,6 +28,7 @@ export const Title = styled.h2`
 
 export const Icon = styled.img`
   height: 28px;
+
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     height: 16px;
   }
@@ -56,11 +57,12 @@ export const List = styled.ul`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     grid-template-columns: repeat(2, 1fr);
-  };
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     grid-template-columns: 1fr;
     font-size: 14px;
-  };
+  }
 
   ${({ longList }) => longList && css`
     max-height: 230px;
@@ -69,13 +71,14 @@ export const List = styled.ul`
     flex-direction: column;
     
     @media (max-width: 870px) {
-    max-height: 500px;
-  };
-  `};
+      max-height: 500px;
+    }
+  `}
 `;
 
 export const Item = styled.li`
   margin: 2px 0px;
+
   &:before {
     content: "•";
     font-size: 24px;

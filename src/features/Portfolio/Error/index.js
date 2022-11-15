@@ -11,7 +11,7 @@ export const Error = () => {
   return (
     <Wrapper>
       {darkMode ? <DangerLight /> : <DangerDark />}
-      <Title>Ooops! Something went wrong... </Title>
+      <Title>Ooops! Something went wrong...</Title>
       <Text>
         Sorry, failed to load Github projects.<br />You can check them directly on Github.
       </Text>
@@ -25,4 +25,4 @@ export const Error = () => {
       </ButtonLink>
     </Wrapper>
   )
-}
+};

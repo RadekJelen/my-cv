@@ -5,7 +5,7 @@ import { skillset } from "./skillset";
 
 export const Skills = () => (
   <ListSection
-  title={<>My skillset includes <Icon src={hammer} alt="" /></>}
+    title={<>My skillset includes <Icon src={hammer} alt="" /></>}
     items={
       skillset.map(skill => (
         <Item key={skill.id}>
@@ -14,4 +14,4 @@ export const Skills = () => (
       ))
     }
   />
-)
+);

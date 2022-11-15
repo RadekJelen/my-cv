@@ -3,7 +3,7 @@ import Homepage from './features/Homepage';
 import { GlobalStyle } from './GlobalStyle';
 import { useSelector } from "react-redux";
 import { selectDarkMode } from "./features/ThemeSwitcher/themeSwitcherSlice";
-import {darkTheme, lightTheme} from "./theme";
+import { darkTheme, lightTheme } from "./theme";
 
 function App() {
   const darkMode = useSelector(selectDarkMode);
@@ -14,6 +14,6 @@ function App() {
       <Homepage />
     </ThemeProvider>
   );
-}
+};
 
 export default App;

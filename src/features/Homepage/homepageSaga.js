@@ -1,6 +1,6 @@
-import { delay, call, takeEvery, put } from "redux-saga/effects"
+import { delay, call, takeEvery, put } from "redux-saga/effects";
 import { fetchRepositories, fetchRepositoriesError, fetchRepositoriesSuccess, setRepositories } from "./homepageSlice";
-import { getRepositories } from "../Portfolio/getRepositories"
+import { getRepositories } from "../Portfolio/getRepositories";
 
 function* fetchRepositoriesHandler() {
   try {
@@ -13,8 +13,6 @@ function* fetchRepositoriesHandler() {
   }
 };
 
-
-
 export function* homepageSaga() {
   yield takeEvery(fetchRepositories.type, fetchRepositoriesHandler);
-}
+};
