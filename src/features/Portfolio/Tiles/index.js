@@ -3,7 +3,7 @@ import { selectRepositories } from "../../Homepage/homepageSlice";
 import { TilesWrapper, Tile, Title, Description, LinkLine, Link } from "./styled";
 
 export const Tiles = () => {
-  const unwantedReposNames = ["my-cv"];
+  const unwantedReposNames = ["RadekJelen","my-cv"];
   const allRepos = useSelector(selectRepositories);
   const filteredRepos = allRepos.filter(({ name }) => !(unwantedReposNames.includes(name)));
 
