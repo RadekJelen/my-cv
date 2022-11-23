@@ -9,10 +9,11 @@ export const ButtonLink = styled.a`
   border-radius: 4px;
   font-weight: 600;
   font-size: 20px;
+  transition: 0.5s;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.buttonBorderHover};
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.buttonBorderHover};   
   }
   
   &:active {

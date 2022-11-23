@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  max-width: 1216px;
-  margin: 0 auto;
+  margin-top: 120px;
 `;
 
 export const LetsTalk = styled.p`
@@ -20,7 +19,7 @@ export const LetsTalk = styled.p`
 export const Link = styled.a`
   margin-right: 24px;
   color: ${({ theme }) => theme.colors.secondFont};
-  transition: color 0.2s linear;
+  transition: 0.5s;
   cursor: pointer;
   
   &:hover {
@@ -31,6 +30,7 @@ export const Link = styled.a`
 export const Email = styled.p`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.secondFont};
+  margin: auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 39px;

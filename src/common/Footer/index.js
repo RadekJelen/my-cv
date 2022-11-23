@@ -1,4 +1,4 @@
-import { Icons, LetsTalk, Email, Link, Paragraph, Wrapper } from "./styled";
+import { Wrapper, Icons, LetsTalk, Email, Link, Paragraph } from "./styled";
 import { ReactComponent as GithubLogo } from "./logos/Github_black.svg";
 import { ReactComponent as LinkedInLogo } from "./logos/LinkedIN_black.svg";
 import { ReactComponent as FacebookLogo } from "./logos/Facebook_black.svg";
