@@ -1,10 +1,10 @@
 import { Container } from "./../../common/Container";
-import { ThemeSwitcher } from "../../features/ThemeSwitcher";
-import { Footer } from "./../../common/Footer";
-import { PersonInfo } from "./../../common/PersonInfo";
-import { Portfolio } from "./../Portfolio";
-import { Skills } from "./../Skills";
-import { ToLearn } from "./../ToLearn";
+import { ThemeSwitcher } from "./ThemeSwitcher";
+import { Footer } from "./../../features/Homepage/Footer";
+import { PersonInfo } from "./../../features/Homepage/PersonInfo";
+import { Portfolio } from "./../Homepage/Portfolio";
+import { Skills } from "./Skills";
+import { ToLearn } from "./../Homepage/ToLearn";
 
 const Homepage = () => (
   <Container>
@@ -14,7 +14,7 @@ const Homepage = () => (
     <ToLearn />
     <Portfolio />
     <Footer />
-  </Container >
+  </Container>
 );
 
 export default Homepage;

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectRepositories } from "../../Homepage/homepageSlice";
+import { selectRepositories } from "../../../Homepage/homepageSlice";
 import { TilesWrapper, Tile, Title, Description, LinkLine, Link } from "./styled";
 
 export const Tiles = () => {

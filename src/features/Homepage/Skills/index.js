@@ -1,5 +1,5 @@
-import { ListSection } from "../../common/ListSection";
-import { Icon, Item } from "../../common/ListSection/styled";
+import { ListSection } from "../../../common/ListSection";
+import { Icon, Item } from "../../../common/ListSection/styled";
 import hammer from "./hammer.png";
 import { skillset } from "./skillset";
 

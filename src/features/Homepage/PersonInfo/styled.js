@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonLink } from "../ButtonLink/styled";
+import { ButtonLink } from "../../../common/ButtonLink/styled";
 import { ReactComponent as message } from "./message.svg";
 
 export const Wrapper = styled.header`

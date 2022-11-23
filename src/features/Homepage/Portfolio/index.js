@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectDarkMode } from "../../features/ThemeSwitcher/themeSwitcherSlice";
+import { selectDarkMode } from "../../Homepage/ThemeSwitcher/themeSwitcherSlice";
 import { useEffect } from "react";
-import { fetchRepositories, selectStatus } from "../Homepage/homepageSlice";
+import { fetchRepositories, selectStatus } from "../../Homepage/homepageSlice";
 import { Paragraph, Title, Wrapper } from "./styled";
 import { ReactComponent as GithubLogo } from "./github_blue.svg";
 import { Tiles } from "./Tiles";
